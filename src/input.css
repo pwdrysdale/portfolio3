@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply dark:text-white dark:bg-gray-900 min-h-screen;
+}
+
+h1 {
+  @apply text-4xl font-bold;
+}
+
+h4 {
+  @apply text-lg font-semibold;
+}
+
+.home {
+  @apply w-screen h-screen flex items-center justify-center;
+}
+
+.big-name {
+  @apply text-9xl font-bold select-none tracking-widest drop-shadow-md uppercase;
+}
+
+.quick-nav {
+  @apply absolute top-2 -right-2 mr-4 mb-4 bg-blue-500 rounded-md;
+}
+
+.quick-nav__item {
+  @apply hover:text-red-700 text-white duration-300 transition-all w-full cursor-pointer p-4;
+}
+
+.layout {
+  @apply w-full flex justify-between p-2 fixed top-0 z-10 opacity-50 hover:opacity-100 duration-500 transition-all;
+}
+
+.layout__buttons {
+  @apply flex gap-2;
+}
+
+.layout__buttons a {
+  @apply text-white hover:text-red-700 duration-500 transition-all;
+}
+
+.layout__buttons a svg,
+.layout__buttons svg {
+  @apply w-5 h-5;
+}
+
+.routes {
+  @apply bg-teal-400 relative 
+  /* @apply mt-11; */;
+}
+
+.app {
+  @apply relative;
+}
